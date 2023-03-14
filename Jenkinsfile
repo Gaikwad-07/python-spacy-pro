@@ -11,14 +11,14 @@ pipeline {
         stage ('Built') {
             steps{
                 sh '''#!/bin/bash/
-sudo yum install python3-pip python3-dev nginx
-sudo yum update && sudo yum upgrade
-yum install python3-venv -y
-sudo pip3 install virtualenv
+sudo apt-get install python3-pip python3-dev nginx
+sudo apt-get update && sudo yum upgrade
+apt-get install python3-venv -y
+sudo apt-get pip3 install virtualenv
 source evn/bin/activate
 pip install -r requirements.txt
 pip install django==3.0.7
-cd /root/.jenkins/workspace/python-pipeline
+cd /var/lib/jenkins/workspace/python-spacy-pro
 systemctl start ngix
 pip install gunicorn
 pip install pandas==1.5.0
