@@ -1,9 +1,9 @@
 pipeline {
     agent any
     
-    stages{
-        stage ('gitpull') {
-            steps{
+    stages {
+        stage('gitpull') {
+            steps {
                 git 'https://github.com/Gaikwad-07/python-spacy-pro.git'
                 
         stage ('venv') {
