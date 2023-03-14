@@ -2,11 +2,11 @@ pipeline {
     agent any
     
     stages{
-        stage ('gitpull'){
+        stage ('gitpull') {
             steps{
                 git 'https://github.com/Gaikwad-07/python-spacy-pro.git'
                 
-        stage ('Build'){
+        stage ('Build') {
             steps{
                 sh '''#!/bin/bash/
 sudo yum install python3-pip python3-dev nginx
