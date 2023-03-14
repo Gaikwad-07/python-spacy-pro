@@ -13,7 +13,7 @@ pipeline {
                 sh '''cd /var/lib/jenkins/workspace/python-spacy-pro
 sudo apt-get install python3-pip python3-dev nginx -y
 sudo apt-get update && sudo apt-get upgrade -y
-sudo apt-get install python3-venv 
+sudo apt-get install python3-venv -y
 sudo apt-get pip3 install virtualenv -y
 source evn/bin/activate
 pip3 install -r requirements.txt -y
