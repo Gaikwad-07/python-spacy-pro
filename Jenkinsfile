@@ -28,7 +28,12 @@ pip3 install django==3.0.7
 cd /var/lib/jenkins/workspace/python-spacy-pro
 systemctl start ngix
 pip3 install gunicorn
-pip3 install pandas==1.5.0
+pip3 install pandas==1.5.0'''
+            }
+        }
+        stage ('deplpoy') {
+            steps{
+                sh '''#!/bin/bash
 sudo ufw allow 8000
 pip3 install spacy 
 pip3 install request
