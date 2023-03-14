@@ -5,7 +5,9 @@ pipeline {
         stage ('gitpull') {
             steps{
                 git 'https://github.com/Gaikwad-07/python-spacy-pro.git'
-                
+            }
+            
+        }        
         stage ('Built') {
             steps{
                 sh '''#!/bin/bash/
@@ -27,7 +29,4 @@ pip install requests'''
             }
         }    
     }
-}
-        
-}
 }
