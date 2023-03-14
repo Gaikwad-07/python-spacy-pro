@@ -10,8 +10,7 @@ pipeline {
         }        
         stage ('Built') {
             steps{
-                sh '''#!/bin/bash/
-cd /var/lib/jenkins/workspace/python-spacy-pro
+                sh '''cd /var/lib/jenkins/workspace/python-spacy-pro
 sudo apt-get install python3-pip python3-dev nginx
 sudo apt-get update && sudo yum upgrade
 apt-get install python3-venv -y
