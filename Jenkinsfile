@@ -30,9 +30,9 @@ systemctl start ngix
 pip3 install gunicorn
 pip3 install pandas==1.5.0
 sudo ufw allow 8000
-gunicorn --bind 0.0.0.0:8000 demo_spacy.wsgi
 pip3 install spacy 
-pip3 install requests'''
+pip3 install request
+gunicorn --bind 0.0.0.0:8000 demo_spacy.wsgi &'''
             }
         }    
     }
